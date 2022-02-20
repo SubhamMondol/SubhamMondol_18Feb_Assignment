@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Login Page</title>
+<h1 align = "center">Login Page</h1>
+<head>
+<body>
+<form name = accept="login form" method = "post" action = "login.php">
+<table width = "30%" height="30%" bgcolor = "Green" align = "center" >
+
+
+<tr>
+<td>Username:</td>
+<td><input type = "text" size = accept="25" name = "userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type = "text" size = "25" name = "pwd"></td>
+</tr>
+
+<tr>
+<td><input type = "Reset"></td>
+<td><input type = "submit" onclick = "return check(this.form)" value = "Login"></td>
+
+
+</table>
+</form>
+<script language = "javascript">
+function check(form)
+{
+	
+	if(form.userid.value == "Roseindia" && form.pwd == "Roseindia")
+	{
+		return true;
+	}
+	else
+	{
+		alert("Error Password or Username");
+		return false;
+	}
+}
+</script>
+</body>
+</html>
